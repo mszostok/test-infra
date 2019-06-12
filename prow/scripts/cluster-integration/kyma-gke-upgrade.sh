@@ -447,7 +447,9 @@ function testKyma() {
 
     if [ "${testEndToEndResult}" != 0 ]; then
         echo "Helm test operation failed: ${testEndToEndResult}"
+        sleep 3600
         exit "${testEndToEndResult}"
+
     fi
     set -o errexit
 
