@@ -381,6 +381,7 @@ TEST_STATUS=$?
 if [ ${TEST_STATUS} -ne 0 ]
 then
     shout "Tests after restore failed"
+    sleep 3600
     exit 1
 fi
 
