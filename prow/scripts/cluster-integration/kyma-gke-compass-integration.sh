@@ -65,6 +65,7 @@ export GCLOUD_SUBNET_NAME="gke-long-lasting-subnet"
 source "${TEST_INFRA_SOURCES_DIR}/prow/scripts/library.sh"
 
 function removeCluster() {
+  sleep 18000
   #Turn off exit-on-error so that next step is executed even if previous one fails.
   set +e
 
